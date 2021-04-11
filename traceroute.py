@@ -13,6 +13,13 @@ import sys
 # -S
 showSummary = False
 
+def initialize_traceroute( inputString ):
+    return None
 
-def BRP5088_traceroute():
+def BRP5088_traceroute( inputString ):
+    print("Doing trace route")
+
+    initialize_traceroute( inputString )
+
+    
     return None
