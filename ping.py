@@ -1,6 +1,6 @@
 import sys
 import re
-
+import socket
 
 # Desc: We use ping to check network connectivity and to see whether a remote server is up and running. 
 #       Ping sends an ICMP echo request packet to the server which will in turn reply an ICMP echo reply packet to the sender.
@@ -70,6 +70,12 @@ def initialize_ping( inputString ):
 def BRP5088_ping( inputString ):
     initialize_ping( inputString )
 
+    sock = socket()
+
+    print( sock )
+
+    
+    
     """
         bepatt@Snoopy:~$ ping 172.217.165.142
         PING 172.217.165.142 (172.217.165.142) 56(84) bytes of data.
