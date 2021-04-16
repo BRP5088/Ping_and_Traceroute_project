@@ -17,8 +17,8 @@ ping_traceRoute_regex = "(BRP5088_ping|BRP5088_traceroute)"
 def main():
     inputString = input( "BRP5088_ping or BRP5088_traceroute:" )
     
-    # inputString = "BRP5088_ping www.google.com -c 32 -i 10 -s 57 -t 2" # ping
-    inputString = "BRP5088_ping 172.217.12.132 -c 1 -i 10 -s 57 -t 2"  # ping
+    # inputString = "BRP5088_ping www.google.com -c 4 -i 2 -s 56 -t 2" # ping
+    # inputString = "BRP5088_ping 172.217.12.132 -c 1 -i 2 -s 57 -t 2"  # ping
 
     # figures if the user wants to use ping or traceroute
     result = re.search( ping_traceRoute_regex, inputString )
